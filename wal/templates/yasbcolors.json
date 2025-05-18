@@ -1,0 +1,36 @@
+{{
+    "colors": {{
+        "color0": "{color0}",
+        "color1": "{color1}",
+        "color2": "{color2}",
+        "color3": "{color3}",
+        "color4": "{color4}",
+        "color5": "{color5}",
+        "color6": "{color6}",
+        "color7": "{color7}",
+        "color8": "{color8}",
+        "color9": "{color9}",
+        "color10": "{color10}",
+        "color11": "{color11}",
+        "color12": "{color12}",
+        "color13": "{color13}",
+        "color14": "{color14}",
+        "color15": "{color15}",
+        "color9trans": "rgba({color9.rgb},0.5)",
+        "color10trans": "rgba({color10.rgb},0.15)",
+        "color11trans": "rgba({color11.rgb},0.5)",
+        "color12trans": "rgba({color12.rgb},0.3)",
+        "color13trans": "rgba({color13.rgb},0.7)",
+        "color14trans": "rgba({color14.rgb},0.5)",
+        "color15trans": "rgba({color15.rgb},0.9)",
+        "background": "{background}",
+        "backgroundtrans": "rgba({background.rgb},0.5)",
+        "backgroundtrans9": "rgba({background.rgb},0.9)",
+        "backgroundtrans2": "rgba({background.rgb},0.2)",
+        "backgroundtrans3": "rgba({background.rgb},0.3)",
+        "backgroundtrans35": "rgba({background.rgb},0.35)",
+        "foreground": "{foreground}",
+        "cursor": "{cursor}"
+    }}
+}}
+    

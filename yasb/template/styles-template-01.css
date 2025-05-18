@@ -1,0 +1,1119 @@
+:root{
+    --backgroundcol: #12151e;
+    --backgroundtranscol: rgba(18,21,30,0.5);
+    --backgroundtranscol2: rgba(18,21,30,0.2);
+    --backgroundtranscol3: rgba(18,21,30,0.3);
+    --backgroundtranscol35: rgba(18,21,30,0.35);
+    --backgroundtranscol9: rgba(18,21,30,0.9);
+    --foregroundcol: #c3c4c6;
+    --colors1: #5f806c;
+    --colors2: #6b926f;
+    --colors3: #819a76;
+    --colors4: #75997b;
+    --colors5: #849f7e;
+    --colors6: #97a889;
+    --colors7: #c3c4c6;
+    --colors8: #5d6272;
+    --colors9: #5f806c;
+    --colors10: #6b926f;
+    --colors11: #819a76;
+    --colors12: #75997b;
+    --colors13: #849f7e;
+    --colors14: #97a889;
+    --colors15: #c3c4c6;
+    --colors9trans5: rgba(95,128,108,0.5);
+    --colors10trans15: rgba(107,146,111,0.15);
+    --colors11trans5: rgba(129,154,118,0.5);
+    --colors12trans3: rgba(117,153,123,0.3);
+    --colors13trans7: rgba(132,159,126,0.7);
+    --colors14trans5: rgba(151,168,137,0.5);
+    --colors15trans9: rgba(195,196,198,0.9);
+}
+/*
+    colors1=colors9     Right BackColor     (Base)
+    colors2=colors10    Left IconColor
+    colors3=colors11    active-window BorderColor
+    colors4=colors12    Middle BackColor
+    colors5=colors13    Komorebi BackColor Task BorderColor
+    colors6=colors14    Media ButtonColor
+    colors7=colors15=foregroundcol         Main mojiColor
+    colors8                                yasb-bar BorderColor
+
+    --backgroundtranscol35                 yasb-bar BackColor
+    --colors10trans15 (colors2)            Hover
+
+    Nothing
+        --colors11trans5
+        --colors15trans9
+*/
+* {
+    font-size: 18px;
+    color: var(--foregroundcol);
+    font-weight: 500;
+    font-family: "JetBrainsMono NFP";
+    margin: 0;
+    padding: 0;
+
+}
+.yasb-bar {
+    /* padding-right: 8px;
+    padding-left: 8px;
+    margin-right: 0px;
+    margin-left: 0px; */
+    padding: 3px 16px 3px 16px;
+    margin: 0;
+    background-color: var(--backgroundtranscol35);
+    border-radius: 16px;
+    border: 2px solid var(--colors8);
+}
+.widget {
+    background-color: var(--colors1);
+    padding-right: 2px;
+    padding-left: 2px;
+    margin: 0;
+    border-radius: 0;
+}
+.widget .icon {
+    color: var(--backgroundcol);
+    padding-right: 1px;
+    padding-left: 1px;
+    margin: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 0px;   
+}
+.widget .label {
+    background-color: var(--backgroundtranscol9);
+    color: var(--foregroundcol);
+    padding-right: 6px;
+    padding-left: 6px;
+    margin: 1px;
+    margin-right: 5px;
+    margin-left: 2px; 
+    border-radius: 6px;   
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+.traffic-widget {
+    padding-left: 4px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+.traffic-widget .icon {}
+.traffic-widget .label {}
+/* ------------------------------------------------------------------- */
+.wifi-widget {}
+.wifi-widget .icon {}
+.wifi-widget .label {}
+/* ------------------------------------------------------------------- */
+.cpu-widget {}
+.cpu-widget .icon {}
+.cpu-widget .label {}
+/* ------------------------------------------------------------------- */
+.memory-widget {}
+.memory-widget .icon {}
+.memory-widget .label {}
+/* ------------------------------------------------------------------- */
+.power-menu-widget {
+    padding-right: 10px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.power-menu-widget .label {
+    background-color: #00000000;
+    color: var(--backgroundcol);
+    font-weight: bold;
+    font-size: 20px;
+}
+/*POWER MENU POPUP*/
+.uptime {
+    color: var(--foregroundcol);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.power-menu-popup {
+    background-color: var(--backgroundtranscol);
+    border-radius: 12px;
+}
+.power-menu-popup .button {
+    padding: 0;
+    width: 180px;
+    height: 230px;
+    border-radius: 8px;
+    background-color: var(--backgroundtranscol);
+    color: var(--foregroundcol);
+    border: 8px solid #1b1925;
+    margin: 0px;
+}
+.power-menu-popup .button .icon {
+    font-size: 64px;
+    padding-top: 32px;
+    color: var(--colors3);
+}
+.power-menu-popup .button.hover {
+    background-color: var(--colors10trans15);
+}
+.power-menu-popup .button .label {
+    color: var(--colors3);
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.power-menu-popup .button.cancel {
+    height: 32px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--backgroundtranscol);
+}
+.power-menu-popup .button.cancel .icon {
+    padding: 0;
+    margin: 0;
+}
+.power-menu-popup .button.cancel .label {
+    margin: 0;
+    color: var(--colors2);
+}
+.power-menu-popup .button.cancel:hover {
+    background-color: var(--colors10trans15);
+}
+/* ------------------------------------------------------------------- */
+.wallpapers-widget {
+    background-color: var(--colors4);
+}
+.wallpapers-widget .icon {}
+.wallpapers-widget .label {
+    background-color: #00000000;
+    color: var(--backgroundcol);
+    padding: 0;
+    margin: 0;
+    margin-right: 2px;
+}
+/* wallpapers-gallery */ 
+.wallpapers-gallery-window {
+    background-color: var(--backgroundtranscol);
+    border: 0;
+    margin: 0;
+}
+.wallpapers-gallery-buttons {
+    background-color:var(--backgroundtranscol);
+    color: var(--foregroundcol);
+    border: none;
+    font-size: 20px;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin:0 8px 8px 8px;
+    width: 600px;
+}
+.wallpapers-gallery-buttons:hover {
+    background-color:rgba(255, 255, 255, 0.1)
+}
+.wallpapers-gallery-image {
+    border: 4px solid transparent;
+    border-radius: 10px;
+}
+.wallpapers-gallery-image:hover {
+    border: 4px solid var(--colors1);
+}
+.wallpapers-gallery-image.focused {
+    border: 4px solid var(--foregroundcol);
+}
+/* ------------------------------------------------------------------- */
+.whkd-widget {
+    background-color: var(--colors5);
+    padding: 0 6px 0 6px;
+}
+.whkd-widget .icon {
+    font-size: 18px;
+}
+.whkd-popup .edit-config-button {
+    background-color:var(--colors1);
+    color: #ffffff;
+    padding: 4px 8px 6px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    font-family: 'Segoe UI';
+}
+
+.whkd-popup .keybind-buttons-container {
+    min-width: 240px;
+}
+.whkd-popup .keybind-button {
+    background-color: var(--backgroundcol);
+    color: white;
+    padding: 4px 8px 6px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px inset #4f5055;
+    border-bottom: 2px inset #4f5055;
+    border-radius: 4px;
+    font-family: 'JetBrainsMono NFP';
+}
+.whkd-popup .keybind-button.special {
+    background-color: #343538;
+}
+.whkd-popup .keybind-row:hover{
+    background-color: rgba(136, 138, 155, 0.2);
+    border-radius: 8px;
+}
+.whkd-popup .plus-separator {
+    padding: 0 0px;
+    border:none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:transparent
+}
+.whkd-popup .filter-input {
+    padding: 0 8px 2px 8px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    border: 1px solid #2e2e2e;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    background-color: var(--backgroundtranscol);
+    min-height: 32px;
+}
+.whkd-popup .filter-input:focus {
+    border: 1px solid var(--colors1);
+}
+.whkd-popup .keybind-command {
+    font-size: 14px;
+}
+.whkd-popup .keybind-header {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 8px 0;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+/* ------------------------------------------------------------------- */
+.komorebi-control-widget {
+    padding-left: 10px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    margin-left: 2px;
+    background-color: var(--colors5);
+}
+.komorebi-control-widget .label {
+    background-color: #00000000;
+    color: var(--backgroundcol);
+    padding-right: 2px;
+    padding-left: 8px;
+    margin-right: 1px;
+    margin-left: 1px; 
+}
+
+.komorebi-control-menu {
+    background-color: var(--backgroundtranscol);
+}
+.komorebi-control-menu .button {
+    color: var(--colors5);
+    padding: 8px 16px;
+    font-size: 32px;
+    border-radius: 8px;
+    background-color: var(--backgroundtranscol);
+}
+.komorebi-control-menu .button.active {
+    color: var(--foregroundcol);
+    background-color: var(--colors9trans5);
+}
+.komorebi-control-menu .button:disabled{
+    background-color: var(--backgroundtranscol);
+    color: var(--colors12trans3);
+}
+.komorebi-control-menu .button.active:disabled {
+    background-color: var(--backgroundtranscol);
+    color: var(--colors13trans7);
+}
+.komorebi-control-menu .footer .text {
+    font-size: 16px;
+    color: var(--foregroundcol);
+}
+/* KOMOREBI Active Layout */
+.komorebi-active-layout {
+    padding-right: 6px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: var(--colors5);
+}
+.komorebi-active-layout .label {
+    background-color: #00000000;
+    color: var(--backgroundcol);
+}
+/* KOMOREBI Active Layout Menu */
+.komorebi-layout-menu {
+    background-color: var(--backgroundtranscol)
+}
+.komorebi-layout-menu .menu-item {
+    padding: 8px 16px;
+    font-size: 12px;
+    color: var(--foregroundcol); 
+    font-weight: 600;
+}
+.komorebi-layout-menu .menu-item-icon {
+    color: #cdd6f4;
+    font-size: 16px;
+}
+.komorebi-layout-menu .menu-item-text {
+    font-family: 'Segoe UI';
+    padding-left:4px;
+    font-size: 12px;
+} 
+.komorebi-layout-menu .menu-item:hover {
+    background-color:rgba(128, 130, 158, 0.15);
+    color: #fff;
+} 
+.komorebi-layout-menu .separator {
+    max-height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* KOMOREBI WORKSPACE WIDGET */
+.komorebi-workspaces {
+    background-color: var(--colors7);
+}
+.komorebi-workspaces .offline-status {
+    color: var(--colors1);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 4px;
+}
+.komorebi-workspaces .ws-btn {
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-right: 2px;
+    margin-left: 2px;
+    background-color: var(--colors1); 
+    color: var(--backgroundcol);
+}
+.komorebi-workspaces .ws-btn:hover,
+.komorebi-workspaces .ws-btn.populated:hover {
+    background-color: var(--colors3);    
+}
+.komorebi-workspaces .ws-btn.populated {
+    background-color: var(--colors2);
+}
+.komorebi-workspaces .ws-btn.active {
+    background-color: #00000000;
+    color: var(--backgroundcol);
+    width: 50px;
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+.apps-widget {
+    padding-left: 4px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    background-color:var(--colors4);
+}
+.apps-widget .label {
+    background-color: #00000000;
+    color: var(--backgroundcol);
+    padding: 0;
+}
+.apps-widget .label:hover {
+    color: var(--foregroundcol);
+}
+/* ------------------------------------------------------------------- */
+.weather-widget {
+    background-color:var(--colors4);
+}
+.weather-widget .icon {
+    font-size: 20px;
+    font-weight: 700;
+}
+.weather-widget .label {}
+
+/* Weather card style */
+.weather-card {
+    color: var(--foregroundcol);
+    background-color: var(--backgroundtranscol);
+}
+.weather-card-today {
+    border: 1px solid #282936;
+    border-radius: 8px;
+    background-color:  var(--backgroundtranscol);
+}
+.weather-card-today .label {
+    font-size: 18px;
+}
+.weather-card-today .label.location {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--colors4);
+}
+.weather-card-today .label.arert {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--colors1);
+    border: 1px solid rgba(247, 209, 42, 0.1);
+    border-radius: 6px;
+    padding: 5px 0;
+}
+.weather-card-day {
+    border: 1px solid #45475a;
+    border-radius: 8px;
+    background-color:  var(--backgroundtranscol);
+}
+.weather-card-day .label {
+    font-size: 18px;
+    color: var(--colors4);
+}
+/* ------------------------------------------------------------------- */
+.clock-widget {
+    padding-right: 10px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    margin-right: 2px;
+    background-color: var(--colors4);
+}
+.clock-widget .icon {
+    font-size: 20px;
+    font-weight: 700;
+}
+.clock-widget .label {}
+
+.calendar {
+    background-color: var(--crust)
+}
+.calendar .calendar-table,
+.calendar .calendar-table::item {
+    background-color: var(--backgroundtranscol);
+    color: var(--colors4);
+    font-family: 'Segoe UI', Tahoma, Verdana;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;  
+}
+.calendar .calendar-table::item:selected {
+    color: var(--main);
+    font-weight: 900;
+    border-radius: 8px;
+    background-color: var(--blue);
+}
+.calendar .day-label {
+    margin-top: 20px;
+}
+.calendar .day-label,
+.calendar .month-label,
+.calendar .date-label {
+    font-family: 'Segoe UI', Tahoma, Verdana;
+    font-size: 20px;
+    color: var(--colors6);
+    font-weight: 700;
+    min-width: 180px;
+    max-width: 180px;
+}
+.calendar .month-label {
+    font-size: 32px;
+    font-weight: normal;
+}
+.calendar .date-label {
+    font-size: 70px;
+    font-weight: 900;
+    color: var(--colors3);
+    margin-top: -20px;
+}
+/* ------------------------------------------------------------------- */
+.active-window-widget {
+    background-color: var(--backgroundtranscol9);
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 14px;
+    border: 1px solid var(--colors3);
+}
+.active-window-widget .widget-container .label {
+    background-color: transparent;
+    padding: 0;
+    margin: 2px;
+}
+.active-window-widget .widget-container .label.alt {}
+.active-window-widget .widget-container .icon {
+    padding-right: 2px;
+    background-color: transparent;
+    border: none;
+}
+/* ------------------------------------------------------------------- */
+.taskbar-widget {
+    background-color: transparent;
+    /* 
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 14px;
+    border: 1px solid var(--colors3); */
+}
+.taskbar-widget .app-icon {
+    background-color: transparent;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 14px;
+    border: 1px solid var(--colors5);
+    /*
+    padding: 0 8px;
+    border: none;
+    margin: 0;
+    */
+    
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+.home-widget {
+    padding: 0;    
+}
+.home-widget .widget-container {
+    background-color: var(--widget-background);
+    border-radius: 8px;    
+}
+.home-widget .icon {
+    color: var(--backgroundcol);
+    background-color: #00000000;
+}
+.home-widget .icon:hover {
+    color: var(--foregroundcol);
+}
+
+.home-menu {
+    background-color: var(--crust);
+}
+.home-menu .menu-item {
+    padding: 8px 48px 9px 16px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Verdana;
+    color: var(--colors3);
+    font-weight: 600;
+}
+.home-menu .menu-item:hover {
+    background-color: rgba(157, 180, 141, 0.116);
+    color: #fff;
+}
+.home-menu .separator {
+    max-height: 1px;
+    background-color: rgba(157, 180, 141, 0.116);
+}
+/* ------------------------------------------------------------------- */
+.brightness-widget  {
+    padding-left: 4px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    background-color:var(--colors2);
+    /*
+    background-color: #00000000;
+    padding: 0;
+    */
+}   
+.brightness-widget .icon {
+    background-color: var(--backgroundtranscol9);
+    color: var(--foregroundcol);
+    padding-right: 6px;
+    padding-left: 6px;
+    margin: 2px;
+    margin-right: 5px;
+    margin-left: 0px; 
+    border-radius: 6px;   
+    /* color: var(--colors2); */
+}
+
+.brightness-menu {
+    background-color:var(--backgroundtranscol);
+}
+.brightness-slider {
+    border: none;
+}
+/* ------------------------------------------------------------------- */
+.pomodoro-widget {
+    /* background-color: #00000000; */
+}
+.pomodoro-widget .icon {
+    /*
+    color: var(--colors2);
+    background-color: #00000000; 
+    */
+}
+.pomodoro-widget .label.paused,
+.pomodoro-widget .icon.paused {
+    color: var(--colors8);
+}
+.pomodoro-widget .label.work,
+.pomodoro-widget .icon.work {
+    color: var(--colors2);
+}
+
+.pomodoro-widget .label.break,
+.pomodoro-widget .icon.break {
+    color: var(--colors5);
+}
+/* Pomodoro menu styling */
+.pomodoro-menu {
+    background-color: var(--backgroundtranscol);
+    border-radius: 8px;
+}
+.pomodoro-menu .header {
+    font-size: 18px;
+    font-weight: 600;
+    max-height: 0px;
+    color: var(--foregroundcol);
+}
+.pomodoro-menu .status {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--foregroundcol);
+}
+.pomodoro-menu .session {
+    font-size: 16px;
+    color: var(--foregroundcol);
+}
+.pomodoro-menu .button {
+    background-color: var(--colors1);
+    color: var(--foregroundcol);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+.pomodoro-menu .button.start {}
+.pomodoro-menu .button.reset {}
+.pomodoro-menu .button:hover {
+    background-color: var(--colors10trans15);
+}
+.pomodoro-menu .button.pause {
+    background-color: var(--colors4);
+    color: var(--backgroundcol);
+}
+.pomodoro-menu .button:pressed {
+    background-color: var(--colors3);
+}
+
+/* Pomodoro stack */
+.komorebi-stack {
+    margin: 4px 0;
+}
+.komorebi-stack .widget-container {
+    background-color: #282936; 
+    border-radius: 4px;
+}
+.komorebi-stack .window {
+    background-color: transparent;
+    border: none;
+    margin: 0px 8px;
+    padding: 0 4px;
+}
+.komorebi-stack .window.active {
+    background-color: #45475a;
+    border-radius: 4px;
+    height: auto;
+    margin: 0;
+}
+/* ------------------------------------------------------------------- */
+.notes-widget {
+    padding-right: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    margin-right: 2px;
+    background-color: var(--colors2);
+    /*
+    background-color: #00000000; 
+    color: var(--colors2);
+    padding-left: 10px;
+    */
+}
+.notes-widget .label {
+    padding-right: 6px;
+    padding-left: 0px;
+    margin: 2px;
+    margin-right: 5px;
+    margin-left: 0px;
+    border-radius: 0px; 
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /*
+   font-size: 16px;
+   color: var(--colors2);
+   background-color: var(--backgroundtranscol);
+   */
+}
+.notes-widget .icon {
+    background-color: var(--backgroundtranscol9);
+    color: var(--foregroundcol);
+    padding-right: 2px;
+    padding-left: 5px;
+    margin: 2px;
+    margin-right: 0px;
+    margin-left: 5px; 
+    border-radius: 0px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    /*
+    font-size: 18px;
+    background-color: #00000000; 
+    color: var(--colors2);
+    */
+}
+/* Notes Widget Menu */
+.notes-menu {
+    min-width: 400px;
+    max-width: 400px;
+    min-height: auto;
+    
+}
+.notes-menu .note-item {
+    background-color:transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.notes-menu .note-item:hover {
+    background-color: var(--colors10trans15);
+}
+.notes-menu .note-item .icon {
+    font-size: 16px;
+    padding: 0 4px;
+}
+.notes-menu .delete-button {
+    color: var(--foregroundcol);
+    background: transparent;
+    border: none;
+    font-size: 8px;
+    padding: 7px 8px;
+    border-radius: 3px;
+}
+.notes-menu .delete-button:hover {
+    background-color: var(--colors10trans15);
+}
+.notes-menu .copy-button {
+    color: var(--foregroundcol);
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+.notes-menu .copy-button:hover {
+    background-color: var(--colors10trans15);
+}
+.notes-menu .copy-button:pressed {
+    color: #ffffff;
+}
+.notes-menu .note-item .title {
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Verdana;
+}
+.notes-menu .note-item .date {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Verdana;
+    color: var(--colors7);
+}
+.notes-menu .empty-list {
+    font-family: 'Segoe UI', Tahoma, Verdana;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 0 20px 0;     
+}
+.notes-menu .add-button,  
+.notes-menu .cancel-button {
+    padding: 10px;
+    background-color: var(--backgroundtranscol);
+    border: none;
+    border-radius: 4px;
+    color: var(--foregroundcol);
+    font-family: 'Segoe UI', Tahoma, Verdana;
+}
+.notes-menu .cancel-button {
+    margin-left: 4px;
+}
+.notes-menu .add-button:hover,
+.notes-menu .cancel-button:hover {
+    background-color:  var(--colors10trans15);
+}
+.notes-menu .scroll-area {
+    background: transparent; 
+    border: none; 
+    border-radius:0;
+}
+.notes-menu .note-input {
+    background-color:var(--backgroundtranscol);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Segoe UI', Tahoma, Verdana;
+    font-size: 19px;
+    max-height: 56px;
+    padding: 4px;
+    border-radius: 6px;
+}
+.note-input:focus {
+    border: 1px solid var(--colors15);
+}
+/* ------------------------------------------------------------------- */
+.media-widget {
+    background-color:var(--backgroundtranscol);
+    padding-right: 6px;
+    padding-left: 6px;
+}
+.media-widget .widget-container {
+
+}
+.media-widget .label {
+	color: var(--colors6);
+    background-color: transparent;
+	font-size: 17px;
+    font-weight: 700;
+    margin: 2px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.media-widget .btn {
+	color: var(--colors6);
+    background-color:#00000000;
+	padding:0;
+	margin: 0;
+    font-size: 18px;
+}
+.media-widget .btn:hover {
+	color: #ffffff;
+}
+.media-widget .btn.play {
+	font-size: 18px;
+}
+.media-widget .btn.prev {
+    padding: 0 8px
+}
+.media-widget .btn.next {
+    padding: 0 8px
+}
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+	color: var(--colors14trans5);
+}
+
+.media-menu {
+    min-height: 180px;
+    min-width: 420px;
+    max-width: 420px;
+    background-color: var(--backgroundtranscol);
+}
+.media-menu .title,
+.media-menu .artist,
+.media-menu .source {
+    color: var(--colors6);
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Verdana;
+}
+.media-menu .artist {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--colors7);
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+.media-menu .source {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
+    border-radius: 3px;
+    background-color: var(--colors4);
+    padding: 2px 4px;
+
+}
+/* The source class name is the same as what you see in the media widget; just replace spaces with dashes and convert it to lowercase. 
+Example: "Windows Media" becomes "windows-media" */
+.media-menu .source.firefox {
+    background-color: #ff583b;
+    color: #ffffff;
+}
+.media-menu .source.spotify {
+    background-color: #199143;
+    color: #ffffff;
+}
+.media-menu .source.edge {
+    background-color: #0078d4;
+    color: #ffffff;
+}
+.media-menu .source.windows-media {
+    background-color: #0078d4;
+    color: #ffffff;
+}
+.media-menu .source.chrome {
+    background-color: #8d8719;
+    color: #ffffff;
+}
+
+.media-menu .btn {
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+    font-weight: 600;
+    margin: 14px 10px 0px 2px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    border-radius: 20px;
+}
+.media-menu .btn.prev {
+    margin-left: 10px;
+}
+.media-menu .btn:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.media-menu .btn.play {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px
+}
+.media-menu .btn.disabled:hover,
+.media-menu .btn.disabled {
+    color: #4e525c;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.media-menu .playback-time {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Verdana;
+    color: var(--foregroundcol);
+    margin-top: 20px;
+    min-width: 100px;
+}
+.media-menu .progress-slider {
+    height: 10px;
+    margin: 5px 4px;
+    border-radius: 3px;
+}
+.media-menu .progress-slider::groove {
+    background: transparent;
+    height: 2px;
+    border-radius: 3px;
+    background: var(--colors1);
+}
+.media-menu .progress-slider::groove:hover {
+    background: transparent;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--colors1);
+}
+.media-menu .progress-slider::sub-page {
+    background: var(--colors3);
+    border-radius: 3px;
+    height: 4px;
+}
+/* ------------------------------------------------------------------- */
+.cava-widget {
+    background: transparent;
+    padding: 0px;
+    padding-left: 6px;
+    margin: 0px;
+}
+.cava-widget .widget-container {}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+.windows-desktops {
+    padding: 0 4px 0 0px;
+    background-color: #6972f5;
+}
+.windows-desktops .widget-container {
+    background-color: #11111b;
+    margin: 3px 0 3px 5px;
+    border-radius: 0;
+}
+.windows-desktops .ws-btn {
+    color: #7f849c;
+    border: none;
+    font-size: 18px;
+    margin: 0 6px;
+    padding: 2px 
+}
+.windows-desktops .ws-btn.active {
+    color: #89b4fa;
+} 
+.windows-desktops .context-menu {
+    background-color:rgba(17, 17, 32, 0.75);
+    border: none;
+    border-radius: 2px;
+    padding: 8px 0;
+}
+.windows-desktops .context-menu:item {
+    padding: 6px 16px;
+}
+.windows-desktops .context-menu::item:selected {
+    background-color: rgba(255,255,255,0.05);
+    color: #ffffff;
+}
+.windows-desktops .context-menu::separator {
+    margin: 2px 0px 2px 0px;
+    height: 1px;
+    background-color: rgba(255,255,255,0.1);
+}
+.windows-desktops .rename-dialog {
+    background-color: rgba(17, 17, 27, 0.75);   
+}
+.windows-desktops .rename-dialog QPushButton{
+    background-color:rgba(255,255,255,0.1);
+    color: #ffffff;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+.windows-desktops .rename-dialog QPushButton:hover{
+    background-color: #585858;
+    color: #ffffff;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+.windows-desktops .rename-dialog QLabel {
+    color: #ffffff;
+}
+.windows-desktops .rename-dialog QLineEdit {
+    background-color: transparent;
+    border: 1px solid #89b4fa;
+    padding: 4px;
+    color: #ffffff;
+}
+
+.systray {
+    padding: 0 6px 0 6px;
+    background-color: #3ac2da;
+    /*
+    background: rgb(116, 116, 244);
+    border: None;
+    padding: 0;
+    margin: 0;
+    */
+}
+
+.systray .unpinned-container {    
+    background:transparent;;
+    border-radius: 8px;
+}
+.systray .pinned-container {
+    background: transparent;
+}
+.systray .pinned-container[forceshow=true] {
+    background: red;
+}
+.systray .button {
+    border-radius: 4px;
+    padding: 2px 2px;
+}
+.systray .button:hover {
+    background: #ffffff;
+}
+.systray .button[dragging=true] {
+    background: orange;
+    border-color: #FF8800;
+}
+.systray .unpinned-visibility-btn {
+    border-radius: 4px;
+    height: 20px;
+    width: 16px;
+}
+.systray .unpinned-visibility-btn:checked {
+    background: #0d80d2;
+}
+.systray .unpinned-visibility-btn:hover {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    border-color: #fdeeee;
+}

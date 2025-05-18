@@ -1,0 +1,345 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.36/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 0,
+  "default_container_padding": -1,
+  "border": true,
+  "border_width": 5,
+  "border_offset": -1,
+  "theme": {
+    "palette": "Base16",
+    "name": "Ashes",
+    "unfocused_border": "Base01", 
+    "stack_border": "Base0B",
+    "stackbar_background": "Base00",
+    "stackbar_focused_text": "Base0B",
+    "stackbar_unfocused_text": "Base05"
+  },
+  "stackbar": {
+    "height": 20,
+    "mode": "OnStack",
+    "label": "Process",
+    "tabs": {
+      "width": 150,
+      "font_size": 18,
+      "background": "#3C4841",
+      "focused_text": "#A7C080",
+      "font_family": "Inter"
+    }
+  },
+  "animation": {
+    "enabled": true,
+    "duration": 100,
+    "style": "EaseInCubic",
+    "fps": 60
+  },
+  "mouse_follows_focus": false,
+  "resize_delta": 100,
+  "transparency": false,
+  "transparency_alpha": 225,
+  "transparency_ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "YouTube",
+      "matching_strategy": "Contains"
+    }
+  ],
+  "bar_configurations": [
+    "$Env:KOMOREBI_CONFIG_HOME/komorebi.bar.json"
+  ],
+  "manage_rules_applications": [
+    {
+      "kind": "Exe",
+      "id": "floorp.exe",
+      "matching_strategy": "Equals"
+    }, 
+    {
+      "kind": "Exe",
+      "id": "OneCommander.exe",
+      "matching_strategy": "Equals"
+    },
+        {
+      "kind": "Exe",
+      "id": "Arc.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "filepicker.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "object_name_change_applications": [
+    {
+      "kind": "Exe",
+      "id": "OneCommander.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "floorp.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "tray_and_multi_window_applications": [
+    {
+      "kind": "Exe",
+      "id": "Pomatez.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "fdm.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "OneCommander.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "floating_applications": [
+    {
+      "kind": "Title",
+      "id": "Screenbox",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Exe",
+      "id": "Pomatez.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Arc Updater",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Exe",
+      "id": "vlc.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "mpc-hc64.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "mpc-be64.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "SubtitleEdit.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "PotPlayerMini64.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "ignore_rules_applications": [
+    {
+      "kind": "Exe",
+      "id": "MusicBee.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "dexpot.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "cmd.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "kando.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "mpv.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Dropshelf.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "OnScreen Control.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "vpncmgr_x64.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "3dyd64.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "ArisuViewer.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "StageManager.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "AppGroup.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Rainmeter.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Lively.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Class",
+      "id": "ESET Main Frame",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Settings",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Microsoft Store",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "ApplicationFrameHost.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Class",
+      "id": "MozillaDialogClass",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "yasb.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "python3.12.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "LogiAiPromptBuilder.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Riot Client.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "RiotClientServices.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "VALORANT.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "osu!.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "METAPHOR.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "LeagueClient.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "BloonsTD6.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "GGST.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "GGST-Win64-Shipping.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Hades2.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "StreetFighter6.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "vibranceGUI.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Deceive.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Class",
+      "id": "BootstrapUpdateUIClass",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        }
+      ]
+    },
+    {
+      "workspaces": [
+        {
+          "name": "laptop",
+          "layout": "BSP"
+        }
+      ]
+    }
+  ]
+}

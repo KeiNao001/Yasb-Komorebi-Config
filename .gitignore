@@ -1,0 +1,35 @@
+
+# OS固有ファイル
+.DS_Store
+Thumbs.db
+
+# ログファイル
+*.log
+logs/
+
+# backフォルダ・ファイル
+back/
+backup/
+windhawk/back
+yasb/Back-20240425/
+yasb - コピー.ps1
+katalog_settings.ini
+komorebi-command.txt
+yasbchange.ps1
+yasbchange.vbs
+
+# tacky-borders
+tacky-borders/
+
+# notes.json
+notes.json
+
+# エディタ設定
+.vscode/
+.idea/
+
+# 環境変数ファイル
+.env
+
+# Themeファイル
+theme/

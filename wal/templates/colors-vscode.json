@@ -1,0 +1,14 @@
+{{
+    "editor.tokenColorCustomizations": {{
+       "functions":    "{color1}", 
+        "keywords":     "{color5}",
+        "numbers":      "{color3}", 
+        "strings":      "{foreground}", 
+        "types":        "{color6}", 
+        "variables":    "{color2}", 
+        "comments":     "{color8}"
+    }},
+    "workbench.colorCustomizations": {{
+        "editor.background": "{background}"
+    }}
+}}
