@@ -1,0 +1,9 @@
+{
+  "taskbarLocation": "right",
+  "TaskbarWidth": 65,
+  "taskbarLocationSecondary": "sameAsPrimary",
+  "jumpListAlignment": "center",
+  "startMenuAlignment": "center",
+  "startMenuWidth": 0,
+  "clockContainerHeight": 0
+}
