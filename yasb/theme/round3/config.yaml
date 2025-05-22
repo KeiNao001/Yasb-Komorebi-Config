@@ -26,9 +26,9 @@ bars:
       width: "65%"
       height: 43
     padding:
-      top: 10
+      top: 4
       left: 0
-      bottom: 10
+      bottom: 4
       right: 0
     widgets:
       left: [
@@ -40,8 +40,8 @@ bars:
       center: [
         "apps",
         "weather",
-        "clock",
-        "taskbar"
+        "clock"
+        # "taskbar"
       ]
       right: [
         "traffic",
@@ -72,9 +72,9 @@ widgets:
       gradient: 1
       reverse: 0
       foreground: "#ffffff"
-      gradient_color_1: '#5f806c'
-      gradient_color_2: '#849f7e'
-      gradient_color_3: '#c3c4c6'
+      gradient_color_1: '#478084'
+      gradient_color_2: '#559b9f'
+      gradient_color_3: '#72d2d7'
       bars_number: 12
       bar_spacing: 3
       bar_width: 5
@@ -271,7 +271,7 @@ widgets:
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
-      label: "<span>\ue0d6 {wifi_icon} \ue0b2</span>"
+      label: "<span>\ue0d6 {wifi_icon} {wifi_strength}% \ue0b2</span>"
       label_alt: "<span>\ue0d6 </span>{wifi_name} {wifi_strength}%  <span>\ue0b2<span>"
       update_interval: 5000
       callbacks:
@@ -371,8 +371,8 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "\ue0d6 <span>\uf017</span> {%H:%M} \ue0b2"
-      label_alt: "\ue0d6 {%A, %d %B %Y %H:%M} \ue0b2"
+      label: "\ue0d6 <span>\uf017 </span> { %B %d %H:%M} \ue0d7"
+      label_alt: "\ue0d6 {%A, %d %B %Y %H:%M} \ue0d7"
       callbacks:
         on_left: "toggle_label"
         on_right: "toggle_calendar"
@@ -387,7 +387,7 @@ widgets:
   weather:
     type: "yasb.weather.WeatherWidget"
     options:
-      label: "\ue0d6 <span>{icon} </span> {temp} \ue0b2"
+      label: "\ue0d6 <span>{icon}</span> {temp} \ue0b2"
       label_alt: "\ue0d6 {location}: Min {min_temp}, Max {max_temp}, Humidity {humidity} \ue0b2"
       api_key: "58dd6fafce3649b998e115225250805"
       show_alerts: true

@@ -178,7 +178,7 @@
 .whkd-widget .icon {}
 .whkd-popup .edit-config-button {
     background-color:var(--colors2);
-    color: #ffffff;
+    color: white;
     padding: 4px 8px 6px 8px;
     font-size: 14px;
     font-weight: 600;
@@ -229,6 +229,7 @@
     border: 1px solid var(--colors2);
 }
 .whkd-popup .keybind-command {
+    color: white;
     font-size: 14px;
 }
 .whkd-popup .keybind-header {
@@ -418,6 +419,7 @@
 }
 .taskbar-widget .app-icon {
     background-color: transparent;
+    /* color: var(--colors10trans15) */
     padding-left: 10px;
     padding-right: 5px;
 }
